@@ -1,9 +1,9 @@
-import { ArrowBack, VolumeUp } from "@mui/icons-material";
+import { ArrowBack, Margin, VolumeUp } from "@mui/icons-material";
 import { Button, Container, Stack, Typography } from "@mui/material";
 import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-type Langtype = "es" | "hi" | "ja" | "fr";
+type Langtype = "es" | "hi" | "ja" | "fr" | "ga";
 
 const Learning = () => {
   const [count, setCount] = useState<number>(0);
@@ -24,7 +24,7 @@ const Learning = () => {
       >
         <ArrowBack />
       </Button>
-      <Typography m={"2rem 0"}>Learninhmade easy</Typography>
+      <Typography m={"2rem 0"}>Your Path to Easy Learning</Typography>
       <Stack direction={"row"} spacing={"1rem"}>
         <Typography variant={"h5"}>
           {count + 1}- {"Sample"}
@@ -40,9 +40,9 @@ const Learning = () => {
         variant="contained"
         fullWidth
         sx={{ margin: "1.5rem 0" }}
-        onClick={count === 7 ? () => navigate("/quiz") : handlecount}
+        onClick={count === 9 ? () => navigate("/quiz") : handlecount}
       >
-        {count === 7 ? "Test" : "Next"}
+        {count === 9 ? "Test" : "Next"}
       </Button>
     </Container>
   );
