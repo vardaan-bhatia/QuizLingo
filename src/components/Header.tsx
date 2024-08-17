@@ -1,4 +1,11 @@
-import { AppBar, Typography, Toolbar, Switch, Box } from "@mui/material";
+import {
+  AppBar,
+  Typography,
+  Toolbar,
+  Switch,
+  Box,
+  Button,
+} from "@mui/material";
 import { Link } from "react-router-dom";
 
 const style = { margin: "0.5rem", color: "white", textDecoration: "none" };
@@ -14,12 +21,14 @@ const Header = () => {
         </Box>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Link to="/" style={style}>
-            Home
+            <i className="fa-solid fa-house"></i> Home
           </Link>
           <Link to="/login" style={style}>
-            Login
+            <i className="fa-solid fa-arrow-right-to-bracket"></i> Login
           </Link>
-          <Switch aria-label="Toggle dark mode" color="secondary" />
+          <Button aria-label="Toggle dark mode" color="secondary">
+            <i className="fa-solid fa-circle-half-stroke"></i>
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>

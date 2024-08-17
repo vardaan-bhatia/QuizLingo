@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Loader from "./components/Loader";
 import Footer from "./components/Footer";
 import { Box } from "@mui/material";
+import LangApiComponent from "./components/langApi";
 
 const Home = lazy(() => import("./components/Home"));
 const Learning = lazy(() => import("./components/Learning"));
@@ -24,6 +25,7 @@ const App = () => {
               <Route path="/quiz" element={<Quiz />} />
               <Route path="/result" element={<Result />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/api" element={<LangApiComponent />} />
             </Routes>
           </Box>
         </Suspense>
