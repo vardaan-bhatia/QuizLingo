@@ -1,15 +1,13 @@
-import { ArrowBack, Margin, VolumeUp } from "@mui/icons-material";
+import { ArrowBack, VolumeUp } from "@mui/icons-material";
 import { Button, Container, Stack, Typography } from "@mui/material";
 import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-
-type Langtype = "es" | "hi" | "ja" | "fr" | "ga";
 
 const Learning = () => {
   const [count, setCount] = useState<number>(0);
   const searchParams = useSearchParams()[0];
   const languageParams = searchParams.get("language");
-  const language: Langtype | undefined = languageParams as Langtype;
+  // const language: Langtype | undefined = languageParams as Langtype;
 
   const navigate = useNavigate();
   const handlecount = () => {

@@ -13,6 +13,9 @@ const Header = () => {
           </Link>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Link to="/" style={style}>
+            Home
+          </Link>
           <Link to="/login" style={style}>
             Login
           </Link>

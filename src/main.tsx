@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import { ThemeProvider, createTheme } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const theme = createTheme({
   palette: {
